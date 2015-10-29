@@ -1,2 +1,2 @@
 # WcfHelper
-Wcf Invoker and Mock
+Read the [WcfHelper-Wiki](https://github.com/BLun78/WcfHelper/wiki)!!!
