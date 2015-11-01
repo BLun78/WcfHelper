@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfHelper", "WcfHelper\WcfHelper.csproj", "{8821FC43-71C6-4D0C-A8FC-A9FC8657A3B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfHelper.Mock", "WcfHelper.Mock\WcfHelper.Mock.csproj", "{0715C077-39AF-4446-9AF2-E87B46D706C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfHelper.Tests", "WcfHelper.Tests\WcfHelper.Tests.csproj", "{401C2CCE-7808-4721-A67B-75A42D2A786E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7E4C9AE4-5E16-457B-8403-2A914F201624}"
+	ProjectSection(SolutionItems) = preProject
+		Build.CMD = Build.CMD
+		Build.proj = Build.proj
+		Build.tasks = Build.tasks
+		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+		WcfHelperKey.Public.snk = WcfHelperKey.Public.snk
+		WcfHelperKey.snk = WcfHelperKey.snk
+		WcfHelperKey.Token.snk = WcfHelperKey.Token.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{26297809-81A9-4887-99A8-A38BFF4DBAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoService", "Demo\DemoService\DemoService.csproj", "{15F2273E-0906-487C-A501-0F93B6782093}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoServiceContract", "Demo\DemoServiceContract\DemoServiceContract.csproj", "{21B413ED-FB28-413B-B70D-0CC9D8FFD30C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoServiceClient", "Demo\DemoServiceClient\DemoServiceClient.csproj", "{10BFB25F-AA0A-4FE0-941D-30EFAEDA279B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15F2273E-0906-487C-A501-0F93B6782093} = {15F2273E-0906-487C-A501-0F93B6782093}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D4CD98F4-1DC2-4FA6-B0ED-7EC3FDE91839}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.config = .nuget\NuGet.config
+		.nuget\nuget.exe = .nuget\nuget.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\nuspec.2010.7.xsd = .nuget\nuspec.2010.7.xsd
+		.nuget\nuspec.2011.8.xsd = .nuget\nuspec.2011.8.xsd
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8821FC43-71C6-4D0C-A8FC-A9FC8657A3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8821FC43-71C6-4D0C-A8FC-A9FC8657A3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8821FC43-71C6-4D0C-A8FC-A9FC8657A3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8821FC43-71C6-4D0C-A8FC-A9FC8657A3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0715C077-39AF-4446-9AF2-E87B46D706C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0715C077-39AF-4446-9AF2-E87B46D706C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0715C077-39AF-4446-9AF2-E87B46D706C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0715C077-39AF-4446-9AF2-E87B46D706C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{401C2CCE-7808-4721-A67B-75A42D2A786E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401C2CCE-7808-4721-A67B-75A42D2A786E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401C2CCE-7808-4721-A67B-75A42D2A786E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401C2CCE-7808-4721-A67B-75A42D2A786E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F2273E-0906-487C-A501-0F93B6782093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F2273E-0906-487C-A501-0F93B6782093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F2273E-0906-487C-A501-0F93B6782093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F2273E-0906-487C-A501-0F93B6782093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B413ED-FB28-413B-B70D-0CC9D8FFD30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B413ED-FB28-413B-B70D-0CC9D8FFD30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B413ED-FB28-413B-B70D-0CC9D8FFD30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B413ED-FB28-413B-B70D-0CC9D8FFD30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BFB25F-AA0A-4FE0-941D-30EFAEDA279B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BFB25F-AA0A-4FE0-941D-30EFAEDA279B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BFB25F-AA0A-4FE0-941D-30EFAEDA279B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BFB25F-AA0A-4FE0-941D-30EFAEDA279B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15F2273E-0906-487C-A501-0F93B6782093} = {26297809-81A9-4887-99A8-A38BFF4DBAAA}
+		{21B413ED-FB28-413B-B70D-0CC9D8FFD30C} = {26297809-81A9-4887-99A8-A38BFF4DBAAA}
+		{10BFB25F-AA0A-4FE0-941D-30EFAEDA279B} = {26297809-81A9-4887-99A8-A38BFF4DBAAA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_SortFileContentOnSave = True
+		RESX_NeutralResourcesLanguage = de-DE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://bagnb913:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WcfHelper\\WcfHelper.csproj
+		SccProjectName1 = WcfHelper
+		SccLocalPath1 = WcfHelper
+		SccProjectUniqueName2 = WcfHelper.Mock\\WcfHelper.Mock.csproj
+		SccProjectName2 = WcfHelper.Mock
+		SccLocalPath2 = WcfHelper.Mock
+		SccProjectUniqueName3 = WcfHelper.Tests\\WcfHelper.Tests.csproj
+		SccProjectName3 = WcfHelper.Tests
+		SccLocalPath3 = WcfHelper.Tests
+		SccProjectUniqueName4 = Demo\\DemoService\\DemoService.csproj
+		SccProjectTopLevelParentUniqueName4 = WcfHelper.sln
+		SccProjectName4 = Demo/DemoService
+		SccLocalPath4 = Demo\\DemoService
+		SccProjectUniqueName5 = Demo\\DemoServiceContract\\DemoServiceContract.csproj
+		SccProjectTopLevelParentUniqueName5 = WcfHelper.sln
+		SccProjectName5 = Demo/DemoServiceContract
+		SccLocalPath5 = Demo\\DemoServiceContract
+		SccProjectUniqueName6 = Demo\\DemoServiceClient\\DemoServiceClient.csproj
+		SccProjectTopLevelParentUniqueName6 = WcfHelper.sln
+		SccProjectName6 = Demo/DemoServiceClient
+		SccLocalPath6 = Demo\\DemoServiceClient
+	EndGlobalSection
+EndGlobal

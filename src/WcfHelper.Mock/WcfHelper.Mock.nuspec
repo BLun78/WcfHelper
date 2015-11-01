@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  For more info on this file format visit http://docs.nuget.org/docs/reference/nuspec-reference.
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+
+    <id>Blun.$id$</id>
+    <version>$version$</version>
+    <title>WcfHelper.Mock</title>
+    <authors>$author$</authors>
+    <owners>blun.de</owners>
+    
+    <licenseUrl>https://github.com/BLun78/WcfHelper/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/BLun78/WcfHelper</projectUrl>
+    <iconUrl>http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-control-panel-4-icon.png</iconUrl>
+    
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>WcfHelper.Mock helps for develope Unittests for Wcf-Clients.</description>
+    <summary>$description$</summary>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <language>de, en</language>
+    <tags>WcfHelper WCF Wcf-Client Mock Unittest ChannelFactory ClientBase ConfigurationManager AppSetting ConnectionString System.Configuration System.ServiceModel</tags>
+
+
+    <dependencies>
+      <dependency id="Blun.WcfHelper" version="[$version$]"/>
+    </dependencies>
+    
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework="net45" />
+      <frameworkAssembly assemblyName="System" targetFramework="net45" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework="net45" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="net45" />
+      <frameworkAssembly assemblyName="System.ServiceModel" targetFramework="net45" />
+    </frameworkAssemblies>
+
+    <references>
+    </references>
+  </metadata>
+  <files>
+    <file src="bin\**\*.dll" target="lib\net45\" />
+    <file src="bin\**\*.pdb" target="lib\net45\" />
+    <file src="bin\**\*.Fakes.xml" target="lib\net45\" />
+    <file src="bin\**\*.fakesconfig" target="lib\net45\" />
+  </files>
+</package>

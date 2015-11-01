@@ -1,0 +1,2 @@
+#ignore nuget package
+PackageOutputDir\*.nupkg
