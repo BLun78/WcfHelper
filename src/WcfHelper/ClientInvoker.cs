@@ -25,8 +25,7 @@ namespace WcfHelper
             return (ClientCredentials)clientCredentialsPropertyInfo?.GetValue(clientBase);
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000:DoNotDeclareStaticMembersOnGenericTypes")]
-        public const string DefaultEndpointConfigurationName = @"DefaultEndpointConfigurationName";
+        internal const string DefaultEndpointConfigurationName = @"DefaultEndpointConfigurationName";
 
         internal static TClientBase InstantiateClientBase([Optional, CanBeNull]string endpointConfigurationName)
         {
@@ -108,6 +107,11 @@ namespace WcfHelper
 
                 // invoke request
                 return invokeFunction(clientBase);
+            }
+            catch (Exception)
+            {
+                // throws the Exception
+                throw;
             }
             finally
             {

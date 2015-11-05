@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7E4C9A
 		Build.proj = Build.proj
 		Build.tasks = Build.tasks
 		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+		Publish.cmd = Publish.cmd
 		WcfHelperKey.Public.snk = WcfHelperKey.Public.snk
 		WcfHelperKey.snk = WcfHelperKey.snk
 		WcfHelperKey.Token.snk = WcfHelperKey.Token.snk
@@ -80,8 +81,8 @@ Global
 		{10BFB25F-AA0A-4FE0-941D-30EFAEDA279B} = {26297809-81A9-4887-99A8-A38BFF4DBAAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_SortFileContentOnSave = True
 		RESX_NeutralResourcesLanguage = de-DE
+		RESX_SortFileContentOnSave = True
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 7
